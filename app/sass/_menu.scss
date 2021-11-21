@@ -1,0 +1,124 @@
+.menu {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: -6px;
+}
+
+.menu__btn {
+    background-color: transparent;
+    border: none;
+    background-image: url(../img/menu.svg);
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+
+
+.menu__list {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .menu__btn {
+        display: none;
+    }
+
+    .menu__list {
+        display: flex;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: $white;
+        padding: 0;
+
+        & li {
+            list-style: none;
+            padding: 0 7.5px;
+
+            & a {
+                color: $white;
+
+                &:hover {
+                    border-bottom: 2px solid $white;
+                }
+            }
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .menu {
+        justify-self: end;
+        margin-top: 16px;
+    }
+}
+
+
+
+
+.menu__list-small {
+    background-color: $white;
+    position: fixed;
+    z-index: 1000000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+
+    & img {
+        margin-top: 10px;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+    }
+
+    &-item {
+        background-color: $gray;
+        margin-top: 50px;
+        padding-inline-start: 0;
+
+        & a {
+            color: $blue;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        & li {
+            list-style: none;
+            padding: 11px 0 15px 0;
+            border-top: 1px solid $white;
+
+            &:hover {
+                color: $pink;
+            }
+
+        }
+    }
+}
+
+.close-menu {
+    background-image: url(../img/x.svg);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 32px;
+    border: none;
+    height: 32px;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:active {
+        background-color: $gray;
+        border-radius: 12px;
+    }
+
+}

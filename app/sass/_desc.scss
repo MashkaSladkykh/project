@@ -1,0 +1,126 @@
+.desc {
+    margin: 40px 20px 20px 20px;
+    max-width: 335px;
+}
+
+.desc__head {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $pink;
+    margin-bottom: 10px;
+}
+
+.desc__head-2 {
+    font-size: 22px;
+    line-height: 26px;
+    color: $white;
+    margin-bottom: 15px;
+}
+
+.desc__text {
+    font-size: 18px;
+    line-height: 26px;
+    color: $white;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-slider {
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    background-color: $blue;
+    opacity: 0.2;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 0 7px;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.slider-active {
+    opacity: 1;
+}
+
+.flex-big {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .desc,
+    .flex {
+        display: none;
+    }
+
+    .flex-big {
+        margin: 67px 0 26px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .desc-menu {
+        display: flex;
+        flex-direction: column;
+
+        & a {
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 50px;
+            color: #B3B3BA;
+            padding: 10px 40px;
+            text-align: end;
+            max-width: 86%;
+            border-right: 4px solid #E6E6F0;
+
+            &:hover {
+                color: $pink;
+            }
+
+            &:active {
+                color: $pink;
+                border-color: $pink;
+            }
+
+            &:first-child {
+                color: $pink;
+                border-color: $pink;
+            }
+        }
+
+    }
+
+    .desc-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 40px;
+
+        &__header {
+            font-size: 32px;
+            line-height: 38px;
+            color: $white;
+            padding-bottom: 20px;
+            max-width: 600px;
+        }
+
+        &__text {
+            font-size: 21px;
+            line-height: 30px;
+            color: $white;
+            max-width: 600px;
+        }
+    }
+}

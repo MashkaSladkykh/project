@@ -1,0 +1,163 @@
+.header {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr auto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+    color: $white;
+    padding: 23px 20px 20px 20px;
+    overflow: hidden;
+
+}
+
+.header__info {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__lang {
+    text-transform: uppercase;
+
+    & a {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+        color: $white;
+        padding: 4px 4px;
+        border-radius: 8px;
+
+        &:hover {
+            background: rgba(237, 237, 247, 0.5)
+        }
+    }
+
+    &-ukr {
+        background-color: $pink;
+    }
+
+}
+
+.header__adress,
+.header__fb {
+    display: none;
+}
+
+.header__phone {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: $gray;
+
+    &:hover {
+        color: $pink;
+    }
+}
+
+.logo-box {
+    justify-self: start;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 208px;
+}
+
+@media (min-width: 768px) {
+    .header {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+    }
+
+    .header__info {
+        justify-content: flex-start;
+    }
+
+    .header__adress {
+        display: flex;
+        font-size: 16px;
+        line-height: 19px;
+        color: $white;
+        margin-top: 5px;
+
+        &::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $white-border;
+            margin: 7px 14px 8px 10px;
+            display: flex;
+        }
+
+        &::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $white-border;
+            margin: 7px 7px 7px 8px;
+            display: flex;
+        }
+    }
+
+    .header__phone {
+        margin-top: 5px;
+
+        &::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $white-border;
+            margin: 7px 14px 1px 10px;
+            display: inline-block;
+        }
+    }
+
+    .header__fb {
+        display: block;
+        margin-left: 10px;
+        margin-top: 4px;
+        width: 24px;
+        height: 24px;
+
+        & path {
+            fill: $text-gray;
+        }
+
+        &:hover path {
+            fill: $white;
+        }
+
+    }
+
+}
+
+@media (min-width: 992px) {
+    .header {
+        grid-template-rows: auto auto;
+        grid-template-columns: 170px 1fr;
+        padding: 23px 0 20px 0;
+    }
+
+    .header__info {
+        grid-column: 2 / -1;
+        justify-self: end;
+        padding-top: 26px;
+    }
+
+    .logo-box {
+        grid-row: 1 / -1;
+        align-self: center;
+    }
+
+    .logo {
+        width: 416px;
+    }
+
+}

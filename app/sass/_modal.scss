@@ -1,0 +1,188 @@
+.modal {
+    background-color: rgba(50, 50, 100, 0.7);
+    position: fixed;
+    z-index: 1000000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    & textarea {
+        resize: none;
+    }
+
+    & ::placeholder {
+        padding: 10px;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 26px;
+        color: $text-gray;
+    }
+
+    & input {
+        border: none;
+        border-radius: 8px;
+        width: 335px;
+        font-family: "TT Norms", "Arial", sans-serif;
+
+        &:invalid {
+            border-color: $pink;
+        }
+    }
+
+    &-content {
+        margin: 15% auto;
+        padding: 20px;
+        border: none;
+        width: 375px;
+        height: 624px;
+        background-color: $gray-bg;
+        padding: 20px;
+        position: relative;
+
+    }
+
+    &-form {
+        border: none;
+        padding: 0;
+    }
+
+    &-help {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        color: $pink;
+        padding-bottom: 20px;
+    }
+
+    &-name {
+        height: 47px;
+        margin-bottom: 30px;
+
+    }
+
+    &-msg {
+        border-radius: 8px;
+        border: none;
+        width: 335px;
+        height: 180px;
+        margin-bottom: 20px;
+        font-family: "TT Norms", "Arial", sans-serif;
+        font-size: 18px;
+        line-height: 26px;
+        color: $text-gray;
+
+    }
+
+    &-answer {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $text-gray;
+        margin-bottom: 22px;
+    }
+
+    &-tel {
+        height: 47px;
+        margin-bottom: 8px;
+
+    }
+
+    &-mail {
+        height: 47px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+
+
+
+.close {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    position: absolute;
+    right: 18px;
+    top: 30px;
+    background-color: transparent;
+    border: none;
+    background-image: url(../img/close.svg);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+
+}
+
+.close1 {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    background-color: transparent;
+    border: none;
+    background-image: url(../img/close.svg);
+
+}
+
+.modal-send {
+    &:active {
+        background-color: transparent;
+        color: transparent;
+        background-image: url(../img/send.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.modal-sent {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $deep-blue;
+    background-color: $gray;
+    display: none;
+}
+
+
+@media (min-width: 992px) {
+    .modal {
+        &-content {
+            border-radius: 8px;
+            width: 527px;
+            height: 576px;
+        }
+
+        &-help {
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        & input {
+            width: 487px;
+        }
+
+        &-msg {
+            width: 487px;
+        }
+
+        &-name {
+            margin-bottom: 20px;
+        }
+
+        & button {
+            margin-bottom: 20px;
+
+        }
+    }
+
+    .parent-btn input {
+        width: 250px;
+    }
+
+}

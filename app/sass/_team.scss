@@ -1,0 +1,135 @@
+.team {
+    margin: 39px 20px 12px 20px;
+    background-color: $gray-bg;
+    min-width: 335px;
+    border-radius: 12px;
+
+    & a {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $blue;
+        display: inline-block;
+        text-align: center;
+        padding: 20px 0 3px 20px;
+
+        &:hover {
+            color: $pink;
+
+            & path {
+                stroke: $pink;
+            }
+        }
+    }
+
+    &-head {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        color: $pink;
+        min-width: 314px;
+        padding-left: 20px;
+    }
+
+    &-sm-flex {
+        display: flex;
+        justify-content: start;
+        padding: 9px 0 22px 23px;
+
+    }
+
+    &-sm-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    &-about {
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+
+    &-name {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: $text-gray;
+        padding-bottom: 5px;
+    }
+
+    &-position {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: $text-gray;
+    }
+}
+
+.team-big__name,
+.team-big__position,
+.team-big__img {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .team {
+        margin: 70px 0 20px 0;
+        max-width: 100%;
+        display: flex;
+
+        &-sm-flex {
+            padding-left: 40px;
+            flex-direction: column;
+            padding-top: 17px;
+        }
+
+        &-about {
+            display: none;
+        }
+
+        & a {
+            padding: 41px 0 3px 40px;
+        }
+
+        &-head {
+            font-size: 42px;
+            line-height: 50px;
+            max-width: 830px;
+            padding-left: 40px;
+        }
+
+        &-sm-img {
+            display: none;
+        }
+
+        &-big-name {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: $text-gray;
+            padding-bottom: 5px;
+            display: flex;
+
+            &:hover {
+                color: $pink;
+            }
+        }
+
+        &-big-position {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: $text-gray;
+            display: flex;
+        }
+
+        &-big-img {
+            width: 413px;
+            height: 500px;
+            display: flex;
+        }
+    }
+
+}

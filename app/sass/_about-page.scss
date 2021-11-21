@@ -1,0 +1,291 @@
+.about-header {
+    color: $text-gray;
+
+
+    & a {
+        color: $text-gray;
+    }
+
+    & img {
+        width: 183px;
+    }
+
+
+}
+
+a {
+    &.about-header-ukr {
+        color: $white;
+
+        &:hover {
+            color: $text-gray;
+        }
+    }
+}
+
+.menu__btn-about {
+    background-image: url(../img/menu_about.svg);
+
+    &:active {
+        background-color: $gray;
+        border-radius: 12px;
+    }
+}
+
+.about-page-header {
+    font-size: 32px;
+    line-height: 38px;
+    color: $pink;
+    padding: 5px 20px 36px 20px;
+}
+
+.about-page-text {
+    font-size: 18px;
+    line-height: 26px;
+    color: $black;
+    padding: 5px 20px 15px 20px;
+
+}
+
+.experience {
+    max-width: 335px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+
+    &-border {
+        border-top: 4px solid $white-border;
+
+    }
+
+    &-text {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+.experience-item {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    line-height: 42px;
+    color: $pink;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    & img {
+        padding-right: 6px;
+    }
+
+
+}
+
+.about-team {
+    background-image: url(../img/team.png);
+    background-position: center center;
+    background-size: cover;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    color: $white;
+    opacity: 0.8;
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+    margin-top: 38px;
+    margin-bottom: 16px;
+    padding: 124px 0;
+    background-color: $gray;
+}
+
+.history {
+    font-size: 18px;
+    line-height: 26px;
+    color: $black;
+
+    padding: 0 20px 30px 20px;
+}
+
+.achivements {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $deep-blue;
+    padding: 30px 0 30px 0;
+
+    &-flex {
+        display: flex;
+        flex-direction: row;
+        padding: 0 10px;
+        margin-bottom: 30px;
+
+        & img {
+            max-width: 80px;
+            height: 32px;
+        }
+    }
+
+    &-bg {
+        background-color: $white;
+        width: 50%;
+        padding: 13px 0;
+        border-radius: 12px;
+        text-align: center;
+        margin: 0 10px;
+
+        &-none {
+            display: none;
+        }
+    }
+
+}
+
+.slider-marg {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .experience-border {
+        border: none;
+    }
+
+    .menu__list-about {
+        & li a {
+            color: $blue;
+
+            &:hover {
+                color: $pink;
+                border-bottom: 2px solid $pink;
+            }
+        }
+    }
+
+    .menu__list-about li:first-child {
+
+        & a {
+            color: $pink;
+            border-bottom: 2px solid $pink;
+        }
+    }
+
+    .about-big-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-page-about {
+        max-width: 70%;
+    }
+
+    .experience {
+        max-width: 30%;
+        border-left: 4px solid $white-border;
+        padding-left: 20px;
+    }
+
+    .quality {
+        max-width: 30%;
+        padding-left: 20px;
+
+    }
+
+    .achivements {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-big-flex {
+        margin-top: 55px;
+        padding-right: 34px;
+        margin-bottom: 85px;
+        justify-content: end;
+    }
+
+    .about-page-header {
+        font-size: 42px;
+        line-height: 50px;
+        padding-bottom: 15px;
+    }
+
+    .about-page-about {
+        max-width: 680px;
+        padding-top: 22px;
+    }
+
+    .about-page-text {
+        font-size: 21px;
+        line-height: 30px;
+    }
+
+    .about-team {
+        background-image: url(../img/big-team.png);
+        font-size: 96px;
+        line-height: 113px;
+        text-align: center;
+        letter-spacing: 63px;
+        text-transform: uppercase;
+        color: $white;
+        opacity: 0.8;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+        background-size: auto;
+        background-repeat: no-repeat;
+        height: 438px;
+        padding-top: 164px;
+        padding-left: 66px;
+    }
+
+    .experience {
+        max-width: 37%;
+
+        &-border {
+            padding-top: 9px;
+        }
+
+        &-text {
+            padding-bottom: 28px;
+        }
+
+        &-item {
+            padding-top: 11px;
+        }
+    }
+
+    .quality {
+        max-width: 40%;
+        padding: 23px 0 0 0;
+    }
+
+    .about-big-flex-bot {
+        margin-bottom: 49px;
+    }
+
+    .achivements-bg img {
+
+        height: 60px;
+        max-width: 195px;
+    }
+
+    .slider-about {
+        display: none;
+    }
+
+    .achivements-bg-none {
+        display: inline-block;
+    }
+
+    .achivements-bg {
+        width: 25%;
+        padding: 20px 0;
+    }
+
+    .about-header img {
+        width: 364px;
+    }
+
+}

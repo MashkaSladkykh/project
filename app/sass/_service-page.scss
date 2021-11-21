@@ -1,0 +1,235 @@
+.service-page-bg {
+    background: url(../img/small-service-bg.png) top center no-repeat, $service-gradient;
+    background-size: contain;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        height: 10px;
+        border-radius: 0 0 10px 10px;
+        background-color: $purple-shadow;
+        position: absolute;
+        left: 20px;
+        bottom: -10px;
+        width: calc(100% - 40px);
+    }
+
+    &::before {
+
+        content: '';
+        height: 10px;
+        background-color: $light-shadow;
+        border-radius: 0 0 10px 10px;
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+
+    }
+
+    & .package {
+        width: 92px;
+        height: 92px;
+        margin-top: 5px;
+    }
+
+
+}
+
+.service-service {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+
+    & img {
+        width: 64px;
+        height: 64px;
+    }
+
+    & button {
+        margin-top: 10px;
+    }
+
+    & ul {
+        list-style: none;
+    }
+
+    & .parent-btn {
+        margin-top: 17px;
+    }
+}
+
+.service-desc {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: $pink;
+    padding: 20px 0;
+
+}
+
+.service-text {
+    font-size: 18px;
+    line-height: 26px;
+    color: $white;
+    padding-bottom: 21px;
+}
+
+.service-about {
+
+    margin-bottom: 40px;
+
+}
+
+.service-direction {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    line-height: 21px;
+    color: $white;
+    padding-left: 20px;
+    border-top: 4px solid rgba(255, 255, 255, 0.5);
+
+}
+
+.service-list {
+    & li {
+        padding-bottom: 20px;
+        font-size: 18px;
+        line-height: 26px;
+        color: white;
+    }
+
+    & li::before {
+        content: '';
+        background-color: $pink;
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        border-radius: 50%;
+        top: -1px;
+        left: -19px;
+        position: relative;
+
+    }
+}
+
+.service-main .about {
+    margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    .service-page-bg {
+        background: url(../img/service-bg.png) center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0 0 10px 10px;
+        z-index: 1;
+
+        &::after {
+            content: '';
+            height: 10px;
+            border-radius: 0 0 10px 10px;
+            background-color: $purple-shadow;
+            position: absolute;
+            left: 20px;
+            bottom: -10px;
+            width: calc(100% - 40px);
+        }
+
+        &::before {
+
+            content: '';
+            height: 10px;
+            background-color: $light-shadow;
+            border-radius: 0 0 10px 10px;
+            position: absolute;
+            left: 40px;
+            right: 40px;
+            bottom: -20px;
+
+        }
+
+    }
+
+    .menu__list li:first-child {
+        & a {
+            border-bottom: 2px solid $white;
+        }
+    }
+
+    .service-service {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-text {
+        max-width: 860px;
+    }
+
+    .service-list {
+        display: flex;
+        flex-wrap: wrap;
+
+        & li {
+            flex: 0 0 50%;
+            padding-right: 60px;
+        }
+    }
+
+    .service-direction {
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 20px;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    .service-page-bg {
+        & .header img {
+            width: 413px;
+        }
+
+        & .package {
+            margin-top: 27px;
+        }
+    }
+
+    .service-desc {
+        font-size: 42px;
+        line-height: 50px;
+        padding-top: 25px;
+        padding-bottom: 23px;
+    }
+
+    .service-text {
+        font-size: 21px;
+        line-height: 30px;
+    }
+
+    .service-service .parent-btn {
+        margin-bottom: 33px;
+    }
+
+    .service-about {
+        max-width: 1133px;
+    }
+
+    .service-list {
+        padding-bottom: 16px;
+    }
+
+    .service-main {
+        & .about {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+    }
+
+}

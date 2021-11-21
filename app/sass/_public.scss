@@ -1,0 +1,142 @@
+.public {
+    background-color: $gray-bg;
+
+    &-link {
+        padding: 20px 0 0 20px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $blue;
+
+        &:hover path {
+            stroke: $pink;
+        }
+    }
+
+    & a {
+        display: inline-block;
+    }
+
+    &-header {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        color: $pink;
+        padding: 3px 0 25px 20px;
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        margin-bottom: 25px;
+        max-width: 335px;
+        align-items: center;
+
+        &__bg {
+            background-color: $white;
+            border-radius: 8px;
+            height: 100%;
+        }
+
+        &__head {
+            padding: 15px 20px 10px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: $blue;
+            text-align: left;
+        }
+
+        &__date {
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $text-gray;
+            padding: 0 20px 20px 20px;
+        }
+
+        &__text {
+            display: none;
+        }
+    }
+
+    &-flex {
+        margin-bottom: 13px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.public-item-big {
+    display: none;
+}
+
+.public-img {
+    width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    .public {
+        background-color: $gray-bg;
+
+        &-flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
+            margin: 0 -20px;
+
+
+        }
+
+        &-link {
+            padding: 42px 0 0 0;
+        }
+
+        &-item {
+            max-width: 50%;
+            padding: 20px;
+            margin-bottom: 0;
+
+            &__text {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                color: $black;
+                padding: 20px 20px 20px 20px;
+                border-top: 4px solid $white-border;
+                display: inline-block;
+            }
+        }
+    }
+
+    .public-item-big {
+        display: flex;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .public {
+
+        &-header {
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 50px;
+            padding-left: 0;
+        }
+
+        &-item {
+            max-width: 33.333%;
+
+        }
+    }
+
+}

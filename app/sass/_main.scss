@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    z-index: 100;
+}
+
+.body {
+    font-family: "TT Norms", "Arial", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.background {
+    background: $gradient;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        height: 10px;
+        border-radius: 0 0 25px 25px;
+        background-color: $purple-shadow;
+        position: absolute;
+        left: 20px;
+        bottom: -10px;
+        width: calc(100% - 40px);
+    }
+
+    &::before {
+
+        content: '';
+        height: 10px;
+        background-color: $light-shadow;
+        border-radius: 0 0 25px 25px;
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+
+    }
+}
+
+
+.container {
+    max-width: 1320px;
+    min-width: 375px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: $pink;
+    }
+
+    &:active {
+        color: $pink;
+    }
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
