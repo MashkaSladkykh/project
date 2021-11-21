@@ -11,6 +11,8 @@
         &:hover {
             background-color: $gray;
             border-radius: 12px 12px 12px 12px;
+            transition-duration: 0.5s;
+            transition-property: color, background-color;
         }
     }
 

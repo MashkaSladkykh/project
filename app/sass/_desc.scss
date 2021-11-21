@@ -47,6 +47,8 @@
 
     &:hover {
         opacity: 0.6;
+        transition-duration: 0.5s;
+        transition-property: opacity;
     }
 }
 
@@ -87,6 +89,8 @@
 
             &:hover {
                 color: $pink;
+                transition-duration: 0.5s;
+                transition-property: color;
             }
 
             &:active {

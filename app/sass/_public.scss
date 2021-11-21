@@ -12,6 +12,8 @@
 
         &:hover path {
             stroke: $pink;
+            transition-duration: 0.5s;
+            transition-property: stroke;
         }
     }
 

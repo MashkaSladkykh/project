@@ -73,10 +73,18 @@ a {
 
 a:hover {
   color: #F0145A;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: color;
+  transition-property: color;
 }
 
 a:active {
   color: #F0145A;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: color;
+  transition-property: color;
 }
 
 .btn {
@@ -134,6 +142,10 @@ a:active {
 
 .header__lang a:hover {
   background: rgba(237, 237, 247, 0.5);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
 }
 
 .header__lang-ukr {
@@ -295,6 +307,10 @@ a:active {
   }
   .menu__list li a:hover {
     border-bottom: 2px solid #ffff;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-transition-property: border;
+    transition-property: border;
   }
   .menu__list:first-child {
     margin-left: 0;
@@ -349,6 +365,10 @@ a:active {
 
 .menu__list-small-item li:hover {
   color: #F0145A;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: color;
+  transition-property: color;
 }
 
 .close-menu {
@@ -416,10 +436,18 @@ a:active {
 
 .arrow:hover circle {
   stroke: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: stroke;
+  transition-property: stroke;
 }
 
 .arrow:hover path {
   stroke: #24A3FF;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: stroke;
+  transition-property: stroke;
 }
 
 @media (min-width: 768px) {
@@ -515,6 +543,10 @@ a:active {
 
 .slider:hover {
   opacity: 0.6;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
 }
 
 .slider-active {
@@ -560,6 +592,10 @@ a:active {
   }
   .desc-menu a:hover {
     color: #F0145A;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-transition-property: color;
+    transition-property: color;
   }
   .desc-menu a:active {
     color: #F0145A;
@@ -618,10 +654,18 @@ a:active {
 .service-a:hover {
   color: #F0145A;
   opacity: 1;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: color, opacity;
+  transition-property: color, opacity;
 }
 
 .service-a:hover path {
   stroke: #F0145A;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: stroke;
+  transition-property: stroke;
 }
 
 .service__header {
@@ -671,6 +715,10 @@ a:active {
 
 .services-flex__item a:hover {
   color: #F0145A;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: color;
+  transition-property: color;
 }
 
 .services-flex__head {
@@ -683,6 +731,10 @@ a:active {
 
 .services-flex__head:hover {
   color: #F0145A;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: color;
+  transition-property: color;
 }
 
 .services-flex__text {
@@ -774,10 +826,18 @@ a:active {
 
 .team a:hover {
   color: #F0145A;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: color;
+  transition-property: color;
 }
 
 .team a:hover path {
   stroke: #F0145A;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: stroke;
+  transition-property: stroke;
 }
 
 .team-head {
@@ -874,6 +934,10 @@ a:active {
   }
   .team-big-name:hover {
     color: #F0145A;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-transition-property: color;
+    transition-property: color;
   }
   .team-big-position {
     font-weight: normal;
@@ -913,6 +977,10 @@ a:active {
 .about__item:hover {
   background-color: #EDEDF7;
   border-radius: 12px 12px 12px 12px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
 }
 
 .about__text {
@@ -1022,6 +1090,10 @@ a:active {
 
 .public-link:hover path {
   stroke: #F0145A;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: stroke;
+  transition-property: stroke;
 }
 
 .public a {
@@ -1196,6 +1268,12 @@ a:active {
   background: #0085FF;
   -webkit-box-shadow: 0px 0px 30px rgba(36, 163, 255, 0.5);
           box-shadow: 0px 0px 30px rgba(36, 163, 255, 0.5);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: background-color, -webkit-box-shadow;
+  transition-property: background-color, -webkit-box-shadow;
+  transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow, -webkit-box-shadow;
 }
 
 .btn:active {
@@ -1267,6 +1345,10 @@ a:active {
 
 .footer__fb:hover path {
   fill: #F0145A;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: fill;
+  transition-property: fill;
 }
 
 .footer__phone {
@@ -1644,6 +1726,10 @@ a.about-header-ukr {
 
 a.about-header-ukr:hover {
   color: #B3B3BA;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-property: color;
+  transition-property: color;
 }
 
 .menu__btn-about {
@@ -1790,6 +1876,10 @@ a.about-header-ukr:hover {
   .menu__list-about li a:hover {
     color: #F0145A;
     border-bottom: 2px solid #F0145A;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    -webkit-transition-property: color, border;
+    transition-property: color, border;
   }
   .menu__list-about li:first-child a {
     color: #F0145A;

@@ -19,6 +19,8 @@ a {
 
         &:hover {
             color: $text-gray;
+            transition-duration: 0.3s;
+            transition-property: color;
         }
     }
 }
@@ -161,6 +163,8 @@ a {
             &:hover {
                 color: $pink;
                 border-bottom: 2px solid $pink;
+                transition-duration: 0.3s;
+                transition-property: color, border;
             }
         }
     }

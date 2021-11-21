@@ -53,10 +53,14 @@ a {
 
     &:hover {
         color: $pink;
+        transition-duration: 0.5s;
+        transition-property: color;
     }
 
     &:active {
         color: $pink;
+        transition-duration: 0.5s;
+        transition-property: color;
     }
 }
 

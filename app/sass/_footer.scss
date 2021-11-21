@@ -41,6 +41,8 @@
 
         &:hover path {
             fill: $pink;
+            transition-duration: 0.5s;
+            transition-property: fill;
         }
     }
 

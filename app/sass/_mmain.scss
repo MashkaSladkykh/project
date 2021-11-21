@@ -44,10 +44,14 @@
 
     &:hover circle {
         stroke: none;
+        transition-duration: 0.5s;
+        transition-property: stroke;
     }
 
     &:hover path {
         stroke: $blue;
+        transition-duration: 0.5s;
+        transition-property: stroke;
     }
 }
 

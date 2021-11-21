@@ -17,9 +17,13 @@
         &:hover {
             color: $pink;
             opacity: 1;
+            transition-duration: 0.5s;
+            transition-property: color, opacity;
 
             & path {
                 stroke: $pink;
+                transition-duration: 0.5s;
+                transition-property: stroke;
             }
         }
     }
@@ -56,6 +60,8 @@
 
             &:hover {
                 color: $pink;
+                transition-duration: 0.5s;
+                transition-property: color;
             }
         }
     }
@@ -69,6 +75,8 @@
 
         &:hover {
             color: $pink;
+            transition-duration: 0.5s;
+            transition-property: color;
         }
     }
 
