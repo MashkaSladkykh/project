@@ -558,19 +558,6 @@ a:active {
 }
 
 @media (min-width: 768px) {
-  .desc,
-  .flex {
-    display: none;
-  }
-  .flex-big {
-    margin: 67px 0 26px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .desc-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -630,6 +617,22 @@ a:active {
     line-height: 30px;
     color: #ffff;
     max-width: 600px;
+  }
+}
+
+@media (min-width: 992px) {
+  .flex-big {
+    margin: 67px 0 26px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .desc,
+  .flex {
+    display: none;
   }
 }
 
@@ -770,12 +773,14 @@ a:active {
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 -20px;
   }
   .services-flex {
     width: 33.333%;
     margin: 30px 0;
     padding: 0 20px 0px 0;
+  }
+  .services-flex:nth-child(3n) {
+    padding-right: 0;
   }
   .services-flex__text {
     padding-left: 20px;
@@ -885,10 +890,11 @@ a:active {
   color: #B3B3BA;
 }
 
-.team-big__name,
-.team-big__position,
-.team-big__img {
+.team-big-name,
+.team-big-position,
+.team-big-img {
   display: none;
+  overflow: hidden;
 }
 
 @media (min-width: 992px) {
@@ -1016,12 +1022,19 @@ a:active {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .about__item {
+    width: 50%;
+    border-right: 1px solid #ffff;
+  }
   .about__text {
     font-size: 24px;
     line-height: 28px;
     width: 330px;
     margin-bottom: auto;
   }
+}
+
+@media (min-width: 992px) {
   .about__item {
     width: 33.333%;
     border-right: 1px solid #ffff;
@@ -1194,7 +1207,9 @@ a:active {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    margin: 0 -20px;
+  }
+  .public-flex:nth-child(3n) {
+    padding: 0;
   }
   .public-link {
     padding: 42px 0 0 0;

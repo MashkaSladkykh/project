@@ -71,10 +71,11 @@
     }
 }
 
-.team-big__name,
-.team-big__position,
-.team-big__img {
+.team-big-name,
+.team-big-position,
+.team-big-img {
     display: none;
+    overflow: hidden;
 }
 
 @media (min-width: 992px) {

@@ -61,18 +61,6 @@
 }
 
 @media (min-width: 768px) {
-
-    .desc,
-    .flex {
-        display: none;
-    }
-
-    .flex-big {
-        margin: 67px 0 26px;
-        display: flex;
-        justify-content: center;
-    }
-
     .desc-menu {
         display: flex;
         flex-direction: column;
@@ -126,5 +114,18 @@
             color: $white;
             max-width: 600px;
         }
+    }
+}
+
+@media (min-width: 992px){
+    .flex-big {
+        margin: 67px 0 26px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .desc,
+    .flex {
+        display: none;
     }
 }

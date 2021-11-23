@@ -45,6 +45,10 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        &__item {
+            width: 50%;
+            border-right: 1px solid $white;
+        }
 
         &__text {
             font-size: 24px;
@@ -53,9 +57,14 @@
             margin-bottom: auto;
         }
 
+        
+    }
+}
+@media (min-width: 992px) {
+    .about {
         &__item {
-            width: 33.333%;
-            border-right: 1px solid $white;
+        width: 33.333%;
+        border-right: 1px solid $white;
         }
     }
 }
